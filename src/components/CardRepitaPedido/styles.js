@@ -1,12 +1,9 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    container: {
-        flex: .18,
-        
+    container: {        
         marginVertical: '10%',
-        marginHorizontal: '5%',
-        padding: 16,
+        padding: 14,
         borderRadius: 6,
         
         backgroundColor: '#fff',
@@ -30,7 +27,7 @@ const styles = StyleSheet.create({
     },
     titulo: {
         color: '#444',
-        fontSize: 22,
+        fontSize: 20,
         fontWeight: '500',
         marginBottom: 10
     },
