@@ -1,9 +1,9 @@
 import React from 'react';
-import Pedidos from './pages/Pedidos/Home';
+import Perfil from './pages/Perfil/Home'
 
 const App = () => {
   return (
-        <Pedidos />
+         <Perfil />  
   );
 };
 
