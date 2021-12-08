@@ -1,107 +1,91 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-    
-    containerHearder:{
-        paddingHorizontal:10,
-        marginTop:10
-    },
+  containerPerfil: {
+    backgroundColor: '#fff',
+    paddingHorizontal: 14,
+    paddingTop: 10,
+  },
+  containerHeader: {
+    backgroundColor: '#fff',
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingBottom: 25,
+  },
+  containerQrcode: {
+    marginTop: 10,
+  },
+  qrcode: {
+    color: 'red',
+  },
 
-    containerScrollView:{
-        marginTop:10,
-    },
+  containerInfoUsuario: {
+    justifyContent: 'flex-start',
+    marginTop: 22,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  imagemPerfil: {
+    borderRadius: 24,
+    marginRight: 15,
+    width: 48,
+    height: 48,
+  },
+  nomePerfil: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#111',
+  },
 
-    containerQrcode: { 
-        alignItems: 'flex-end',
-    },
-    qrcode: {
-        color: 'red' 
-    },
+  containerConvite: {
+    justifyContent: 'space-between',
+    marginTop: 5,
+    marginBottom: 6,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: 4,
+    padding: 14,
 
-    containerPerfil: {
-        justifyContent: "flex-start",
-        marginTop:5,
-        flexDirection: "row",
-        alignItems:'center'
+    shadowColor: '#6663',
+    shadowOffset: {
+      width: 0,
+      height: 1,
     },
+    shadowOpacity: 0.18,
+    shadowRadius: 1.00,
+    elevation: 1,
+  },
+  containerInfoConvite: {
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  conviteImagem: {
+    marginRight: 16,
+    width: 32,
+    height: 32,
+  },
+  conviteCupom: {
+    color: '#333',
+    fontWeight: '600',
+    fontSize: 15,
+  },
+  conviteAmigos: {
+    color: '#aaa',
+    fontWeight: '500',
+    fontSize: 15,
+  },
+  iconeSeta: {
+    color: '#aaa5',
+  },
 
-    imagem:{
-        borderRadius: 30,
-        marginRight:15,
-        width: 40,
-        height: 40,
-    },
+  separadorMenus: {
+    marginTop: 48,
+  },
 
-    containerConvite:{
-        justifyContent: "center",
-        marginTop:30,
-        flexDirection: "row",
-        alignItems:'center',
-        borderColor: '#dcdcdc',
-        borderWidth: 1
-    },
-    convidar:{
-        marginVertical:10,
-        marginLeft:10,
-        marginRight:15,
-        width: 70,
-        height: 70,
-        color: 'red' 
-    },
-
-    containerChat:{
-        justifyContent: "flex-start",
-        marginTop:20,
-        flexDirection: "row",
-        alignItems:'center',
-        borderColor: '#dcdcdc',
-        borderWidth: 1
-    },
-
-    chat:{
-        marginVertical:10,
-        marginLeft:15,
-        marginRight:15,
-        width: 70,
-        height: 70,
-    },
-
-    containerNotificacao:{
-        justifyContent: "flex-start",
-        marginTop:5,
-        flexDirection: "row",
-        alignItems:'center',
-        borderColor: '#dcdcdc',
-        borderWidth: 1,
-    },
-
-    notificacao: {
-        marginVertical:10,
-        marginLeft:15,
-        marginRight:15,
-        width: 70,
-        height: 70,
-    },
-
-    containerAjuda:{
-        justifyContent: "flex-start",
-        marginTop:50,
-        flexDirection: "row",
-        alignItems:'center',
-        borderColor: '#dcdcdc',
-        borderWidth: 1
-    },
-
-    ajuda:{
-        marginVertical:10,
-        marginLeft:15,
-        marginRight:15,
-        width: 70,
-        height: 70,
-    },
-
-    marginFinal:{
-        marginTop:170
-    }
+  marginFinal: {
+    marginTop: 252,
+  }
 });
 export default styles;
