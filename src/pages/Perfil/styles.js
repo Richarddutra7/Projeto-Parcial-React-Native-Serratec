@@ -20,6 +20,10 @@ const styles = StyleSheet.create({
     color: 'red',
   },
 
+  containerApps: {
+    height: '84%'
+  },
+
   containerInfoUsuario: {
     justifyContent: 'flex-start',
     marginTop: 22,
@@ -85,7 +89,7 @@ const styles = StyleSheet.create({
   },
 
   marginFinal: {
-    marginTop: 252,
+    marginTop: 0,
   }
 });
 export default styles;
