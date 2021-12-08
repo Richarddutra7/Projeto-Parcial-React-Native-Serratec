@@ -9,14 +9,7 @@ import {
 } from 'react-native';
 import styles from './styles';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {
-  faAngleRight,
-  faQrcode,
-  faQuestionCircle,
-  faCog,
-  faShieldAlt,
-  faStore,
-} from '@fortawesome/free-solid-svg-icons';
+import {faAngleRight, faQrcode} from '@fortawesome/free-solid-svg-icons';
 import menuPerfilData from '../../mock/menuPerfilData';
 import menuInferiorPerfilData from '../../mock/menuInferiorPerfilData';
 import MenuPerfilItem from '../../components/MenuPerfilItem';
@@ -59,20 +52,6 @@ const Perfil = () => {
             <FontAwesomeIcon icon={faAngleRight} style={styles.iconeSeta} />
           </View>
 
-          {/* <TouchableOpacity style={styles.containerItemMenuPrincipal}>
-            <View style={styles.containerInfoItemMenuPrincipal}>
-              <Image
-                source={require('../../assets/img/menu_perfil/menuPerfil1.png')}
-                style={styles.menuImagem}
-              />
-              <View>
-                <Text style={styles.tituloCard}>Chats</Text>
-                <Text style={styles.descricaoCard}>Minhas conversas</Text>
-              </View>
-            </View>
-            <FontAwesomeIcon icon={faAngleRight} style={styles.iconeSetaEscuro} />
-          </TouchableOpacity> */}
-
           {menuPerfilData.length === 0
             ? ''
             : menuPerfilData.map((item, index) => {
@@ -81,51 +60,12 @@ const Perfil = () => {
 
           <View style={styles.separadorMenus}></View>
 
-              
-          {
-            menuInferiorPerfilData.length === 0
-            ? ""
+          {menuInferiorPerfilData.length === 0
+            ? ''
             : menuInferiorPerfilData.map((item, index) => {
-                return <MenuInferiorPerfilItem key={index} dados={item} />
-            })
-          }
-          
+                return <MenuInferiorPerfilItem key={index} dados={item} />;
+              })}
 
-          {/* <View style={styles.containerNotificacao}>
-            <FontAwesomeIcon
-              icon={faCog}
-              style={styles.notificacao}
-              size={23}
-            />
-            <Text> Configurações</Text>
-          </View>
-
-          <View style={styles.containerNotificacao}>
-            <FontAwesomeIcon
-              icon={faShieldAlt}
-              style={styles.notificacao}
-              size={23}
-            />
-            <Text> Segurança</Text>
-          </View>
-
-          <View style={styles.containerNotificacao}>
-            <FontAwesomeIcon
-              icon={faQrcode}
-              style={styles.notificacao}
-              size={23}
-            />
-            <Text> Usar no carro</Text>
-          </View>
-
-          <View style={styles.containerNotificacao}>
-            <FontAwesomeIcon
-              icon={faStore}
-              style={styles.notificacao}
-              size={23}
-            />
-            <Text> Sugerir restaurantes</Text>
-          </View> */}
           <View style={styles.marginFinal}></View>
         </ScrollView>
       </View>
