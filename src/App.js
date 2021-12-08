@@ -1,9 +1,13 @@
 import React from 'react';
-import Perfil from './pages/Perfil/Home'
+//import Perfil from './pages/Perfil/Home';
+import Header from './components/Header';
+
 
 const App = () => {
   return (
-         <Perfil />  
+      
+      <Header />
+    
   );
 };
 
