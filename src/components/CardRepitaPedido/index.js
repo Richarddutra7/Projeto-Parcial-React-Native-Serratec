@@ -1,7 +1,7 @@
 import React from "react";
 import {Text, View, Image} from 'react-native';
 import styles from './styles';
-import AdicionarSacolaButton from '../AdicionarSacolaButton';
+import ButtonIfood from '../ButtonIfood';
 
 function CardRepitaPedido() {
     return (
@@ -21,7 +21,7 @@ function CardRepitaPedido() {
                     />
                 </View>
             </View>
-            <AdicionarSacolaButton />
+            <ButtonIfood texto='Adicionar à sacola' />
         </View>
     );
 }

@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     },
     conteudo: {
         color: '#000',
+        fontWeight: '500',
         fontSize: 14,
     },
     itemEsquerda: {

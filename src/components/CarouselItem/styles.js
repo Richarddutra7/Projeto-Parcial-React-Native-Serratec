@@ -2,13 +2,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     containerCard: {
-        height: 130,
+        height: 124,
         width: 126,
         alignItems: "center",
 
         backgroundColor: '#fff',
         paddingHorizontal: 24,
-        paddingVertical: 16,
+        paddingVertical: 12,
         marginHorizontal: 6,
         borderRadius: 6,
 
