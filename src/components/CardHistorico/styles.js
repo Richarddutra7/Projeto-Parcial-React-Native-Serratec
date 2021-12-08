@@ -78,6 +78,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  avaliacaoTexto: {
+    color: '#444'
+  },
   linhaBotoes: {
     flexDirection: 'row',
     justifyContent: 'space-around',

@@ -35,7 +35,7 @@ const Perfil = () => {
       </View>
 
       <View style={styles.containerApps}>
-        <ScrollView style={styles.containerScrollView}>
+        <ScrollView style={styles.containerScrollView} showsVerticalScrollIndicator={false}>
           <View style={styles.containerConvite}>
             <View style={styles.containerInfoConvite}>
               <Image

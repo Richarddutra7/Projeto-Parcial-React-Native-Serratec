@@ -43,7 +43,7 @@ function CardHistorico({dados}) {
       </View>
       <View style={styles.linhaHorizontal} />
       <TouchableOpacity style={styles.containerAvaliacao}>
-        <Text>Avaliação</Text>
+        <Text style={styles.avaliacaoTexto}>Avaliação</Text>
         <StarRating
           rating={starCount}
           onChange={setStarCount}

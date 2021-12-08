@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   },
 
   marginFinal: {
-    marginTop: 0,
+    marginTop: 5,
   }
 });
 export default styles;

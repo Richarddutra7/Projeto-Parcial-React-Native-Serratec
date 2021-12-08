@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+    containerPedidos: {
+        flex: .95,
+        backgroundColor: '#fffe'
+    },
     container: {
         flex: 1,
         marginHorizontal: '5%',

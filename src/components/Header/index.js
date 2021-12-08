@@ -1,52 +1,45 @@
 import React from 'react';
-import {Text, View, Image} from 'react-native';
-import styles from './style';
+import {Text, View, Image, TouchableOpacity} from 'react-native';
+import styles from './style.js';
 
 //importa os icones
 
-const Header = () => {
+const Header = ({pedidosAtivo, perfilAtivo, handleSetPedidosAtivo, handleSetPerfilAtivo}) => {
   return (
     <View style={styles.containerMenu}>
-      <View>
+      <TouchableOpacity style={styles.containerMenuItem}>
         <Image
           source={require('../../assets/img/inicio.png')}
           style={styles.inicio}
         />
-        <View>
-          <Text>Início</Text>
-        </View>
-      </View>
+        <Text style={styles.menuItemTexto}>Início</Text>
+      </TouchableOpacity>
 
-       <View>
-       <Image
+      <TouchableOpacity style={styles.containerMenuItem}>
+        <Image
           source={require('../../assets/img/busca.png')}
           style={styles.inicio}
         />
-        <View>
-          <Text>Busca</Text>
-        </View>
-      </View>
+        <Text style={styles.menuItemTexto}>Busca</Text>
+      </TouchableOpacity>
 
-      <View>
-      <Image
-          source={require('../../assets/img/pedidos.png')}
+      <TouchableOpacity style={styles.containerMenuItem} onPress={handleSetPedidosAtivo}>
+        <Image
+          source={pedidosAtivo ? require('../../assets/img/header3Ativo.png') : require('../../assets/img/pedidos.png')}
           style={styles.inicio}
         />
-        <View>
-          <Text>Pedido</Text>
-        </View>
-      </View> 
 
-      <View>
-      <Image
-          source={require('../../assets/img/perfil.png')}
+        <Text style={styles.menuItemTexto}>Pedido</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.containerMenuItem} onPress={handleSetPerfilAtivo}>
+        <Image
+          source={perfilAtivo ? require('../../assets/img/header4Ativo.png') : require('../../assets/img/perfil.png')}
           style={styles.inicio}
         />
-        <View>
-          <Text>Perfil</Text>
-        </View>
-      </View> 
 
+        <Text style={styles.menuItemTexto}>Perfil</Text>
+      </TouchableOpacity>
     </View>
   );
 };
